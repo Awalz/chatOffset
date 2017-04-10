@@ -14,6 +14,9 @@
 		223DF70F1E9C0C560007D862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223DF70D1E9C0C560007D862 /* LaunchScreen.storyboard */; };
 		223DF71A1E9C0C560007D862 /* chatOffsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DF7191E9C0C560007D862 /* chatOffsetTests.swift */; };
 		223DF7251E9C0C560007D862 /* chatOffsetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DF7241E9C0C560007D862 /* chatOffsetUITests.swift */; };
+		223DF7331E9C0D7A0007D862 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DF7321E9C0D7A0007D862 /* ChatManager.swift */; };
+		223DF7351E9C0D940007D862 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DF7341E9C0D940007D862 /* ChatController.swift */; };
+		223DF7371E9C0EB60007D862 /* ChatViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DF7361E9C0EB60007D862 /* ChatViewControllerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		223DF7201E9C0C560007D862 /* chatOffsetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatOffsetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223DF7241E9C0C560007D862 /* chatOffsetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatOffsetUITests.swift; sourceTree = "<group>"; };
 		223DF7261E9C0C560007D862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223DF7321E9C0D7A0007D862 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		223DF7341E9C0D940007D862 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatController.swift; path = ../ChatController.swift; sourceTree = "<group>"; };
+		223DF7361E9C0EB60007D862 /* ChatViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewControllerCell.swift; path = ../ChatViewControllerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				223DF7081E9C0C560007D862 /* Main.storyboard */,
 				223DF70B1E9C0C560007D862 /* Assets.xcassets */,
 				223DF70D1E9C0C560007D862 /* LaunchScreen.storyboard */,
+				223DF7341E9C0D940007D862 /* ChatController.swift */,
+				223DF7361E9C0EB60007D862 /* ChatViewControllerCell.swift */,
+				223DF7321E9C0D7A0007D862 /* ChatManager.swift */,
 				223DF7101E9C0C560007D862 /* Info.plist */,
 			);
 			path = chatOffset;
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					223DF7001E9C0C560007D862 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XGVPMVWV3N;
 						ProvisioningStyle = Automatic;
 					};
 					223DF7141E9C0C560007D862 = {
@@ -259,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223DF7331E9C0D7A0007D862 /* ChatManager.swift in Sources */,
 				223DF7071E9C0C560007D862 /* ViewController.swift in Sources */,
+				223DF7371E9C0EB60007D862 /* ChatViewControllerCell.swift in Sources */,
 				223DF7051E9C0C560007D862 /* AppDelegate.swift in Sources */,
+				223DF7351E9C0D940007D862 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XGVPMVWV3N;
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XGVPMVWV3N;
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
