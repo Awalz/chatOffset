@@ -202,7 +202,6 @@
 				TargetAttributes = {
 					223DF7001E9C0C560007D862 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = XGVPMVWV3N;
 						ProvisioningStyle = Automatic;
 					};
 					223DF7141E9C0C560007D862 = {
@@ -427,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XGVPMVWV3N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
@@ -440,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XGVPMVWV3N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
@@ -522,6 +521,7 @@
 				223DF72B1E9C0C560007D862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223DF72C1E9C0C560007D862 /* Build configuration list for PBXNativeTarget "chatOffsetTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +530,7 @@
 				223DF72E1E9C0C560007D862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223DF72F1E9C0C560007D862 /* Build configuration list for PBXNativeTarget "chatOffsetUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +539,7 @@
 				223DF7311E9C0C560007D862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
