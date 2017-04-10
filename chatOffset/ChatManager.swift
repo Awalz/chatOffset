@@ -90,6 +90,8 @@ class ChatManager: UIViewController
         view.frame.origin.y = -offset
         
         UIView.commitAnimations()
+        currentKeyboardHeight = keyboardHeight
+
     }
     
     func keyboardWillBeHidden(_ notification: Notification) {

@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					223DF7001E9C0C560007D862 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = GB722ZX59E;
 						ProvisioningStyle = Automatic;
 					};
 					223DF7141E9C0C560007D862 = {
@@ -426,7 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB722ZX59E;
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
@@ -439,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GB722ZX59E;
 				INFOPLIST_FILE = chatOffset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chatoffset.test.chatOffset;
