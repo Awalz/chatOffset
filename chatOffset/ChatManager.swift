@@ -27,6 +27,8 @@ class ChatManager: UIViewController
     @IBOutlet weak var sendButtonBottom: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     var tableViewChat: ChatController?
+    var currentKeyboardHeight : CGFloat = 0.0
+
     
     override func viewDidLoad() {
          self.hideKeyboardWhenTappedAround()
@@ -77,21 +79,20 @@ class ChatManager: UIViewController
         let animationDuration = getKeyboardAnimationDuration(notification)
         let animationCurve    = getKeyboardAnimationCurve(notification)
         
+        let offset = max(currentKeyboardHeight, keyboardHeight)
+        
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(animationDuration)
         UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: animationCurve.intValue)!)
+        
         UIView.setAnimationBeginsFromCurrentState(true)
         
-        bottomConstraint.constant = keyboardHeight + 4
-        sendButtonBottom.constant = bottomConstraint.constant
-        tableViewChat?.tableView.contentOffset.y = keyboardHeight + 4
-        tableViewChat?.tableView.tableViewScrollToBottom(animated: true)
-        view.layoutIfNeeded()
+        view.frame.origin.y = -offset
+        
         UIView.commitAnimations()
     }
     
     func keyboardWillBeHidden(_ notification: Notification) {
-        
         let animationDuration = getKeyboardAnimationDuration(notification)
         let animationCurve    = getKeyboardAnimationCurve(notification)
         
@@ -100,25 +101,11 @@ class ChatManager: UIViewController
         UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: animationCurve.intValue)!)
         UIView.setAnimationBeginsFromCurrentState(true)
         
-        bottomConstraint.constant = 4
-        sendButtonBottom.constant = 4
-        view.layoutIfNeeded()
+        view.frame.origin.y = 0.0
+        
+        
         UIView.commitAnimations()
     }
 }
 
-extension UITableView {
-    
-    func tableViewScrollToBottom(animated: Bool) {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
-            
-            let numberOfSections = self.numberOfSections
-            let numberOfRows = self.numberOfRows(inSection: numberOfSections-1)
-            if numberOfRows > 0 {
-                let indexPath = IndexPath(row: numberOfRows-1, section: (numberOfSections-1))
-                self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.bottom, animated: animated)
-            }
-        }
-    }
-}
+
